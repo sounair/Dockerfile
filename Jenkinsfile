@@ -6,5 +6,10 @@ pipeline {
                 sh 'sudo docker ps'
             }
         }
+        stage('sia') {
+            steps {
+                sh 'sudo docker images'
+            }
+        }
     }
 }
