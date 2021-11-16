@@ -8,6 +8,7 @@ pipeline {
         }
         stage('sia') {
             steps {
+                sh 'ls'
                 sh 'sudo docker images'
             }
         }
