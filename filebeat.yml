@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log #Change value to true to activate the input configuration
+  enabled: true
+  paths:
+    - /var/log/syslog
+
+output.elasticsearch:
+        hosts: ["10.91.226.160:9200"]
